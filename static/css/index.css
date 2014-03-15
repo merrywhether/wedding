@@ -10,8 +10,8 @@ header {
     z-index:1;
     position:absolute;
     top:20px;
-    width:90%;
-    left:5%;
+    width: 90%;
+    left: 5%;
 }
 
 .banner {
@@ -28,8 +28,11 @@ header {
             border-radius: 10%;
     border-radius: 10%;
     margin:auto;
-    display:table;
     padding: 0px 20px;
+}
+.inner-banner {
+    display:table;
+    margin:auto;
 }
 
 .banner h1 {
@@ -51,7 +54,26 @@ header {
     min-height:797px;
     width:100%;
     height:100%;
+}
 
+.main {
+    position: absolute;
+    top:200px;
+    color:white;
+    font-family: "Poiret One";
+    font-size: 18px;
+    margin: auto;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    background: rgba(16, 8, 2, 0.4);
+    -webkit-border-radius: 10%;
+       -moz-border-radius: 10%;
+        -ms-border-radius: 10%;
+         -o-border-radius: 10%;
+            border-radius: 10%;
+    border-radius: 10%;
 }
 
 
@@ -63,8 +85,4 @@ footer {
     height:30px;
     color: white;
     text-align: center;
-}
-
-html {
-    padding:0px;
 }
