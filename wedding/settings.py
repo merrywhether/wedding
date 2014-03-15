@@ -62,9 +62,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 
 STATICFILES_DIRS = (
-    path.join(BASE_DIR, 'static')
+    path.join(BASE_DIR, 'static'),
 )
 
 TEMPLATE_DIRS = (
-    path.join(BASE_DIR, 'templates')
+    path.join(BASE_DIR, 'templates'),
 )
