@@ -1,4 +1,4 @@
-import os
+from os import path
 
 import dj_database_url
 
@@ -24,6 +24,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'www',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -54,11 +56,15 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config()
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = path.dirname(path.dirname(__file__))
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static')
+    path.join(BASE_DIR, 'static')
+)
+
+TEMPLATE_DIRS = (
+    path.join(BASE_DIR, 'templates')
 )
