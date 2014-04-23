@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Risto and Megan's Wedding</title>
-    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+{% extends 'base.html' %}
 
-</head>
-<body>
-<header>
-    <div class="banner">
-        <div class="inner-banner">
-            <h1><i class="fa fa-align-right"></i></h1>
-            <h1>Megan & Risto</h1>
-            <h1><i class="fa fa-align-left"></i></h1>
-        </div>
-    </div>
-</header>
-
-<div class="background">
-</div>
-
-<div class="main">
+{% block main %}
+<main class="round-boxes">
     <h1>Megan Bresnahan</h1>
     <h2>&</h2>
     <h1>Risto Keravuori</h1>
@@ -30,8 +10,5 @@
     <h4>at the</h4>
     <h2>Beehive in Boston, MA</h2>
     <p>- more details and online RSVP to follow - </p>
-</div>
-
-
-</body>
-</html>
+</main>
+{% endblock %}

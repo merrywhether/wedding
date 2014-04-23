@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risto & Megan's Wedding</title>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+
+</head>
+<body>
+<header class="round-boxes">
+    <div class="banner">
+        <div class="inner-banner">
+            <h2><i class="fa fa-align-right"></i></h2>
+            <h1>Megan <small>&</small> Risto</h1>
+            <h2><i class="fa fa-align-left"></i></h2>
+        </div>
+    </div>
+</header>
+
+<div class="background">
+</div>
+<div class="spacer"></div>
+
+{% block main %}{% endblock %}
+
+<footer class="round-boxes" id="opaque">
+    <a href="{% url 'accommodations' %}">Accommodations</a>
+</footer>
+
+
+</body>
+</html>

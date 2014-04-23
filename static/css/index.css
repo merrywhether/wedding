@@ -1,44 +1,6 @@
 body {
-    /*background-image:url('/static/img/beehive_main.png');*/
-    /*background-size: 100%;*/
-    /*background-repeat: no-repeat;*/
     background-color:#160802;
     padding:0px;
-}
-
-header {
-    z-index:1;
-    position:absolute;
-    top:20px;
-    width: 90%;
-    left: 5%;
-}
-
-.banner {
-    font-family: 'Poiret One';
-    text-align: center;
-    color: #dddddd;
-    font-size: 24px;
-    border: 3px solid rgba(255, 255, 255, 0.4);
-    background: rgba(16, 8, 2, 0.4);
-    -webkit-border-radius: 10%;
-       -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-         -o-border-radius: 10%;
-            border-radius: 10%;
-    border-radius: 10%;
-    margin:auto;
-    padding: 0px 20px;
-}
-.inner-banner {
-    display:table;
-    margin:auto;
-}
-
-.banner h1 {
-    padding: 0px 5px;
-    display:table-cell;
-    vertical-align: middle;
 }
 
 .background {
@@ -56,16 +18,11 @@ header {
     height:100%;
 }
 
-.main {
-    position: absolute;
-    top:200px;
-    color:white;
+.round-boxes {
     font-family: "Poiret One";
-    font-size: 18px;
-    margin: auto;
-    width: 50%;
-    left: 25%;
+    color:white;
     text-align: center;
+
     border: 3px solid rgba(255, 255, 255, 0.4);
     background: rgba(16, 8, 2, 0.4);
     -webkit-border-radius: 10%;
@@ -73,16 +30,94 @@ header {
         -ms-border-radius: 10%;
          -o-border-radius: 10%;
             border-radius: 10%;
-    border-radius: 10%;
+}
+
+header {
+    z-index:1;
+    position:absolute;
+    top:20px;
+    width: 90%;
+    left: 5%;
+}
+
+.banner {
+    font-size: 24px;
+    margin:auto;
+    padding: 0px 20px;
+}
+.inner-banner {
+    display:table;
+    margin:auto;
+}
+
+.banner h1 {
+    padding: 0px 5px;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.banner h2 {
+    padding: 0px 5px;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+main {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.hotel-list {
+    width: 100%;
+}
+
+.hotel-list li {
+    margin: 5px;
 }
 
 
 footer {
-    position: absolute;
-    bottom:0px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width:100%;
+    z-index: 1;
+    position: fixed;
+    font-size:24px;
+    bottom:-5px;
+    left:5%;
+    width:90%;
     height:30px;
-    color: white;
-    text-align: center;
+    padding-top: 10px;
+    -webkit-box-shadow: 0px -30px 60px 30px rgba(16, 8, 2, 1);
+       -moz-box-shadow: 0px -30px 60px 30px rgba(16, 8, 2, 1);
+        -ms-box-shadow: 0px -30px 60px 30px rgba(16, 8, 2, 1);
+         -o-box-shadow: 0px -30px 60px 30px rgba(16, 8, 2, 1);
+            box-shadow: 0px -30px 60px 30px rgba(16, 8, 2, 1);
+}
+
+#opaque {
+    background: rgba(16, 8, 2, 1);
+}
+
+.spacer {
+    height: 150px;
+    width:100%;
+}
+
+
+a {
+    color:white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+hr {
+    color: rgba(200, 200, 200, 0.2);
+    width: 30%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
 }
